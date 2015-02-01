@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="min_simple_vertical_menu_item_height">48dp</dimen>
+    <dimen name="simple_vertical_menu_item_padding">16dp</dimen>
+
+    <dimen name="simple_horizontal_menu_item_width">96dp</dimen>
+    <dimen name="simple_horizontal_menu_icon_size">48dp</dimen>
+    <dimen name="simple_horizontal_menu_item_padding">16dp</dimen>
+
+    <dimen name="round_menu_button_size">48dp</dimen>
+
+</resources>

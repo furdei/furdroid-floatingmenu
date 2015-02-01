@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/quick_menu_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/quick_menu_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#AA000000"
+        android:focusable="true"
+        android:clickable="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/quick_menu_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="right" />
+
+        <!--<Button-->
+            <!--android:id="@+id/quick_menu_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="menu"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/quick_menu_container"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="right">-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+</FrameLayout>

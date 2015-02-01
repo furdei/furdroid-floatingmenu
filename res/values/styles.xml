@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FloatingMenu">
+        <!-- A style of each menu item layout -->
+        <attr name="floatingMenuItemContainerStyle" format="reference" />
+
+        <!-- A style of each menu items group layout -->
+        <attr name="floatingMenuGroupContainerStyle" format="reference" />
+
+        <!-- A style of a header text of menu items group -->
+        <attr name="floatingMenuHeaderTextStyle" format="reference" />
+
+        <!-- A style of a menu item's icon -->
+        <attr name="floatingMenuIconStyle" format="reference" />
+
+        <!-- A style of a menu item's text -->
+        <attr name="floatingMenuTextStyle" format="reference" />
+
+        <!-- A style of a layout that holds a floating menu -->
+        <attr name="floatingMenuLayoutBackground" format="reference|color" />
+
+        <!-- Primary color of a menu. Used to tint menu icons in a normal state -->
+        <attr name="floatingMenuColorPrimary" format="reference|color" />
+
+        <!-- Primary dark color of a menu. Used to tint menu icons in pressed state -->
+        <attr name="floatingMenuColorPrimaryDark" format="reference|color" />
+
+        <!-- Primary color of a menu. Used to tint Open/Close menu button in a normal state -->
+        <attr name="floatingMenuColorPrimaryHandle" format="reference|color" />
+
+        <!-- Accent color of a menu. Used for ripple effect and to tint icons in focused state -->
+        <attr name="floatingMenuColorAccent" format="reference|color" />
+    </declare-styleable>
+
+    <!-- Use this color if you don't want a menu to tint icons -->
+    <color name="no_tint">#00000000</color>
+
+    <style name="Theme" />
+
+    <style name="Theme.FloatingMenu">
+        <item name="floatingMenuColorPrimary">@color/no_tint</item>
+        <item name="floatingMenuColorPrimaryDark">?attr/colorPrimaryDark</item>
+        <item name="floatingMenuColorPrimaryHandle">?attr/colorPrimary</item>
+        <item name="floatingMenuColorAccent">?attr/colorAccent</item>
+    </style>
+
+    <style name="Theme.FloatingMenu.Vertical">
+        <item name="floatingMenuItemContainerStyle">@style/FloatingMenu.Vertical.Container</item>
+        <item name="floatingMenuTextStyle">@style/FloatingMenu.Vertical.Text</item>
+    </style>
+
+    <style name="Theme.FloatingMenu.Horizontal">
+        <item name="floatingMenuItemContainerStyle">@style/FloatingMenu.Horizontal.ItemContainer</item>
+        <item name="floatingMenuGroupContainerStyle">@style/FloatingMenu.Horizontal.GroupContainer</item>
+        <item name="floatingMenuHeaderTextStyle">@style/FloatingMenu.Horizontal.Header</item>
+        <item name="floatingMenuIconStyle">@style/FloatingMenu.Horizontal.Icon</item>
+        <item name="floatingMenuTextStyle">@style/FloatingMenu.Horizontal.Text</item>
+        <item name="floatingMenuLayoutBackground">@style/FloatingMenu.Horizontal.LayoutBackground</item>
+    </style>
+
+    <style name="FloatingMenu" />
+
+    <style name="FloatingMenu.Vertical" />
+
+    <style name="FloatingMenu.Vertical.Container" parent="@android:style/Widget.Button" >
+        <item name="android:layout_gravity">right</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:layout_marginBottom">@dimen/simple_vertical_menu_item_padding</item>
+        <item name="android:minHeight">@dimen/min_simple_vertical_menu_item_height</item>
+    </style>
+
+    <style name="FloatingMenu.Vertical.Text">
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginLeft">@dimen/simple_vertical_menu_item_padding</item>
+        <item name="android:layout_marginRight">@dimen/simple_vertical_menu_item_padding</item>
+    </style>
+
+    <style name="FloatingMenu.Horizontal" />
+
+    <style name="FloatingMenu.Horizontal.LayoutBackground" >
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="FloatingMenu.Horizontal.GroupContainer" >
+        <item name="android:layout_marginLeft">@dimen/simple_horizontal_menu_item_padding</item>
+        <item name="android:layout_marginRight">@dimen/simple_horizontal_menu_item_padding</item>
+    </style>
+
+    <style name="FloatingMenu.Horizontal.ItemContainer" parent="@android:style/Widget.Button" >
+        <item name="android:layout_marginLeft">@dimen/simple_horizontal_menu_item_padding</item>
+        <item name="android:layout_marginRight">@dimen/simple_horizontal_menu_item_padding</item>
+        <item name="android:layout_marginTop">@dimen/simple_vertical_menu_item_padding</item>
+        <item name="android:layout_marginBottom">@dimen/simple_vertical_menu_item_padding</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="FloatingMenu.Horizontal.Header">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:layout_marginTop">@dimen/simple_vertical_menu_item_padding</item>
+        <item name="android:layout_marginBottom">@dimen/simple_vertical_menu_item_padding</item>
+    </style>
+
+    <style name="FloatingMenu.Horizontal.Text">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:width">@dimen/simple_horizontal_menu_item_width</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="FloatingMenu.Horizontal.Icon">
+        <item name="android:layout_marginLeft">@dimen/simple_horizontal_menu_item_padding</item>
+        <item name="android:layout_marginRight">@dimen/simple_horizontal_menu_item_padding</item>
+        <item name="android:layout_marginTop">@dimen/simple_vertical_menu_item_padding</item>
+        <item name="android:layout_marginBottom">@dimen/simple_vertical_menu_item_padding</item>
+    </style>
+
+</resources>

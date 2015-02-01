@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quick_actions_button_shadow">
+
+        <ImageButton
+            android:id="@+id/quick_menu_button"
+            android:layout_width="@dimen/round_menu_button_size"
+            android:layout_height="@dimen/round_menu_button_size"
+            android:src="@drawable/ic_open_menu"
+            android:background="@drawable/quick_actions_button" />
+
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        style="?floatingMenuLayoutBackground">
+
+        <LinearLayout
+            android:id="@+id/quick_menu_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right" />
+
+    </HorizontalScrollView>
+
+</LinearLayout>

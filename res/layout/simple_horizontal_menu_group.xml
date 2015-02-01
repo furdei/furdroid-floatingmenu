@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default layout for groups of items in a horizontal menu -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="?floatingMenuGroupContainerStyle">
+
+    <TextView
+        android:id="@+id/floating_menu_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?floatingMenuHeaderTextStyle" />
+
+    <LinearLayout
+        android:id="@+id/floating_sub_menu"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- Here will go items with icons and description -->
+    </LinearLayout>
+
+</LinearLayout>

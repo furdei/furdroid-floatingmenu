@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default horizontal menu items layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_menu_item"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="?floatingMenuItemContainerStyle">
+
+    <ImageView
+        android:id="@+id/floating_menu_item_icon"
+        android:layout_width="@dimen/simple_horizontal_menu_icon_size"
+        android:layout_height="@dimen/simple_horizontal_menu_icon_size"
+        style="?floatingMenuIconStyle" />
+
+    <TextView
+        android:id="@+id/floating_menu_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?floatingMenuTextStyle" />
+
+</LinearLayout>
