@@ -2,7 +2,7 @@
 
 ![Floating Menu Logo](http://www.furdei.systems/img/portfolio/furdroid-menu.jpg "Floating Menu Logo")
 
-**Furdroid-floatingmenu** is a trendy widget to help you implement
+**Furdroid-floatingmenu** is a trendy widget that helps you implement a
 material-styled menu. It's totally customizable and extendable. It can be of any shape,
 open and close itself using any animation. And it is designed to be easily styled with your custom theme.
 
