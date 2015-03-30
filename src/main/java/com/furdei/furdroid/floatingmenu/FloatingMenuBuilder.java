@@ -342,7 +342,7 @@ public class FloatingMenuBuilder {
      * theme overrides menu colors with orange color palette leaving other controls' color untouched:
      * <pre>
      * {@code
-     * <style name="VegaNetBase" parent="Theme.AppCompat.Light.NoActionBar">
+     * <style name="FMBase" parent="Theme.AppCompat.Light.NoActionBar">
      *     <item name="floatingMenuColorPrimary">#ffffbb33</item>
      *     <item name="floatingMenuColorPrimaryDark">#ffff8800</item>
      *     <item name="floatingMenuColorAccent">#ffff8800</item>
@@ -355,7 +355,7 @@ public class FloatingMenuBuilder {
      * And this will affect both menu's and other controls' color:
      * <pre>
      * {@code
-     * <style name="VegaNetBase" parent="Theme.AppCompat.Light.NoActionBar">
+     * <style name="FMBase" parent="Theme.AppCompat.Light.NoActionBar">
      *     <item name="colorPrimary">#ffffbb33</item>
      *     <item name="colorPrimaryDark">#ffff8800</item>
      *     <item name="colorAccent">#ffff8800</item>
