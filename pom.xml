@@ -4,10 +4,10 @@
     <parent>
         <artifactId>furdroid</artifactId>
         <groupId>systems.furdei</groupId>
-        <version>1.1.1</version>
+        <version>1.1.2-SNAPSHOT</version>
     </parent>
     <artifactId>furdroid-floatingmenu</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2-SNAPSHOT</version>
     <packaging>aar</packaging>
     <name>furdroid-floatingmenu</name>
     <description>Material Floating Menu for Android</description>
@@ -25,7 +25,7 @@
         <url>https://github.com/furdei/furdroid-floatingmenu</url>
         <connection>scm:git:git://github.com/furdei/furdroid-floatingmenu.git</connection>
         <developerConnection>scm:git:https://github.com/furdei/furdroid-floatingmenu.git</developerConnection>
-        <tag>furdroid-floatingmenu-1.1.1</tag>
+        <tag>furdroid-floatingmenu-1.0</tag>
     </scm>
 
     <dependencies>
@@ -46,13 +46,13 @@
         <dependency>
             <groupId>systems.furdei</groupId>
             <artifactId>ripple-drawable</artifactId>
-            <version>1.1.1</version>
+            <version>1.1.2-SNAPSHOT</version>
             <type>aar</type>
         </dependency>
         <dependency>
             <groupId>systems.furdei</groupId>
             <artifactId>furdroid-components</artifactId>
-            <version>1.1.1</version>
+            <version>1.1.2-SNAPSHOT</version>
             <type>aar</type>
         </dependency>
     </dependencies>
